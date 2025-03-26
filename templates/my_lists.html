@@ -1,0 +1,23 @@
+{% include "header.html" %}
+{% block content %}
+
+  <h1 style="margin-left: 120px; margin-top: 50px;">My Lists</h1>
+  <br>
+  <hr>
+  <br>
+  {% if lists: %}
+  <ul style="margin-left: 120px;">
+    {% for list in lists %}
+      <li style="margin: 0; padding: 0; border: 0;">{{ list.content }}</li>
+      <hr>
+    {% endfor %}
+  </ul>
+  {% else: %}
+    <h5 style="margin-left: 120px;">You don't have any list.</h5>
+    <br>
+    <hr>
+    <br>
+  {% endif %}
+
+{% include "footer.html" %}
+{% endblock %}

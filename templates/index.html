@@ -1,0 +1,57 @@
+{% include "header.html" %}
+    <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img style="border: 5px solid purple;" src="https://static.vecteezy.com/system/resources/previews/013/247/522/non_2x/doodle-checklist-set-to-do-task-list-vector.jpg" class="d-block mx-lg-auto img-fluid" alt="Themes" width="700" height="700">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Free Online To-Do List Maker</h1><br>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button onclick="window.location.href='{{ url_for('create_list') }}'" type="button" class="btn btn-primary btn-lg px-4 me-md-2" style="background-color: purple; border: none;">Create a to do list</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <hr>
+  <section class="hZyLC8r SF6Lh2J ASXfXaN" style="--3NaI4Q:0px;---Ha_cQ:0px display: flex; align-items: center;">
+      <p class="WMwiDIg ISqfIHL -fjGHNq DVz174- Zm4Ezkf cjMWg1H iJbXjQG first-p" style="font-weight: bold; vertical-align: middle; margin-right: 10px;">
+          <span aria-hidden="true" class="qA-OWJy EtEoeSn">
+              <svg width="24" height="24" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5 8.667H10A3.333 3.333 0 006.667 12v20A3.333 3.333 0 0010 35.333h16.667A3.333 3.333 0 0030 32v-5.209h-2.5V32c0 .46-.373.833-.833.833H10A.833.833 0 019.167 32V12c0-.46.373-.833.833-.833h7.5v-2.5z" fill="#000" data-darkreader-inline-fill="" style="--darkreader-inline-fill: #e8e6e3;"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M38.497 3.711c1.953 1.953 2.177 4.894.502 6.57L24.391 24.887a7.567 7.567 0 01-3.161 1.882l-6.018 1.835c-.584.177-1.276-.18-1.546-.797a1.177 1.177 0 01-.062-.811l1.835-6.019a7.566 7.566 0 011.881-3.161L31.928 3.209c1.675-1.675 4.616-1.45 6.569.502zM20.252 24.532a5.676 5.676 0 002.37-1.411l.93-.93-3.536-3.535-.929.93a5.675 5.675 0 00-1.411 2.37l-.311 1.02 1.866 1.867 1.02-.31zm13.06-12.101l-7.992 7.993-3.536-3.536 7.993-7.993 3.536 3.536zm1.769-1.768l2.15-2.15c.837-.838.725-2.308-.252-3.284-.976-.977-2.446-1.09-3.284-.252l-2.15 2.15 3.535 3.536z" fill="currentColor" data-darkreader-inline-fill="" style="--darkreader-inline-fill: currentColor;"></path>
+              </svg>
+          </span>Easy to create and customize</p>
+      <p class="WMwiDIg ISqfIHL -fjGHNq DVz174- Zm4Ezkf cjMWg1H iJbXjQG" style="font-weight: bold; margin-right: 10px;">
+          <span aria-hidden="true" class="qA-OWJy EtEoeSn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5c0-1.1.9-2 2-2zm0 1.5a.5.5 0 00-.5.5v14c0 .28.22.5.5.5h14a.5.5 0 00.5-.5V5a.5.5 0 00-.5-.5H5zm5.75 10.1l3.05-4.15a2 2 0 013.22-.01L21 15.78V19a2 2 0 01-2 2H5a2 2 0 01-2-2v-.09l3.82-5.25a2 2 0 013.22 0l.7.95zm3.6 4.9H19a.5.5 0 00.5-.5v-2.72l-3.69-4.94a.5.5 0 00-.8 0l-3.33 4.53 2.68 3.63zm-5.51-4.96a.5.5 0 00-.81 0l-3.44 4.74a.5.5 0 00.41.22h7.5l-3.66-4.96zM8.5 10a1.5 1.5 0 110-3 1.5 1.5 0 010 3z" data-darkreader-inline-fill="" style="--darkreader-inline-fill: currentColor;"></path>
+              </svg>
+          </span>Professionally designed and formatted</p>
+      <p class="WMwiDIg ISqfIHL -fjGHNq DVz174- Zm4Ezkf cjMWg1H iJbXjQG" style="font-weight: bold; margin-right: 10px;">
+          <span aria-hidden="true" class="qA-OWJy EtEoeSn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="currentColor" fill-rule="evenodd" d="M19.5 10V5a.5.5 0 00-.5-.5h-4.5V10h5zm0 1.5h-5v8H19a.5.5 0 00.5-.5v-7.5zm-6.5-7H5a.5.5 0 00-.5.5v14c0 .28.22.5.5.5h8v-15zM5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5c0-1.1.9-2 2-2z" data-darkreader-inline-fill="" style="--darkreader-inline-fill: currentColor;"></path>
+              </svg></span>Beautifully designed templates</p>
+      <p class="WMwiDIg ISqfIHL -fjGHNq DVz174- Zm4Ezkf cjMWg1H iJbXjQG" style="font-weight: bold; margin-right: 10px;">
+          <span aria-hidden="true" class="qA-OWJy EtEoeSn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M11.25 15.85l-4.38-4.38a.75.75 0 00-1.06 1.06l4.95 4.95c.69.68 1.8.68 2.48 0l4.95-4.95a.75.75 0 10-1.06-1.06l-4.38 4.38V4.25a.75.75 0 10-1.5 0v11.6zm-7.5 3.4h16.5a.75.75 0 110 1.5H3.75a.75.75 0 110-1.5z" data-darkreader-inline-fill="" style="--darkreader-inline-fill: currentColor;"></path>
+              </svg>
+          </span>Easily download or publish</p>
+  </section>
+  <hr>
+<div class="px-4 pt-5 my-5 text-center">
+    <p class="text-left" style="margin: 0 auto; max-width: 600px; margin-bottom: 50px; text-align: start;">Stay on top of everything by keeping a handy, online task list for your projects and routines using Canva’s free to-do list creator. Create a list of things to do for today’s errands or your well-deserved vacation next week with ready-made to-do list templates and tools right within our visual Canva Docs.</p>
+    <div class="overflow-hidden" style="max-height: 30vh;">
+        <div class="container px-5 text-center">
+            <div class="to-do-list-sec">
+                <h2>To Do List<br> Templates</h2>
+            </div>
+        </div>
+    </div>
+    <h2 class="text-left" style="margin-bottom: 30px; margin-top: 30px; text-align: center;">Get the job done with a to-do list</h2>
+    <p class="text-left" style="margin: 0 auto; max-width: 600px; text-align: start;">It’s easy to be tangled in a sea of responsibilities when a new project comes along. It shouldn’t be the case for you. Keep track of your daily errands, weekly agenda, or business or travel plans anytime, anywhere. Create a to-do list that’s functional but also aesthetically stunning — get a clearer picture of all of your tasks and accomplish every activity to set you up for success.</p><br>
+    <p class="text-left" style="margin: 0 auto; max-width: 600px; text-align: start;">Creating a to-do list doesn’t have to be another task on your to-do list. Make a to-do list online in a few easy steps with Canva’s to-do list maker. Open a Canva Doc and let the magic of its built-in tools and vast library help you create your own online task list in no time. Browse our professionally designed templates for free layouts for different purposes. Need a list for your trip to the beach? Are you lining up your team activities for next month’s product launch? Have an organized list with appropriate headings and labels you can customize. Play with fonts, colors, and design elements to make a truly aesthetic to-do list. Then, easily share it online for your team, family, and friends to see and edit in real-time.</p>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+{% include "footer.html" %}
